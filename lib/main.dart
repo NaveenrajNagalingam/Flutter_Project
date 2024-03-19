@@ -8,6 +8,7 @@ import 'package:notes_app/Helpers/AppConstants.dart';
 import 'package:notes_app/Services/PlatformServices/PlatformHiveLocalDbService/PlatformHiveLocalDbService.dart';
 
 void main() async{
+  print("Main function called");
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp
