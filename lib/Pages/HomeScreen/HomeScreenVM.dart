@@ -32,7 +32,7 @@ class HomeScreenVM extends HomeScreenModel{
     }
   }
 
-  Future<List<NotesBO>> getAllNotesfromHive() async{
+  Future<List<NotesBO>> getAllNotesfromHive(bool isNotes) async{
     List<NotesBO> myNotes = [];
     var response = await hiveDbService.getAllNotes();
     myNotes = response.content??[];

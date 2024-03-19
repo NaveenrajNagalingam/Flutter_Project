@@ -30,7 +30,7 @@ void main() {
       when(homeScreenVM.hiveDbService.getAllNotes()).thenAnswer((realInvocation) => Future.value(response));
 
       // Invoke VM method
-      var actualResult = homeScreenVM.getAllNotesfromHive();
+      var actualResult = homeScreenVM.getAllNotesfromHive(true);
 
       // Assert check
       expect(actualResult, Future.value(response));
