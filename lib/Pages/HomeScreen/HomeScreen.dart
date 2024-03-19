@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState(){
     super.initState();
-    responseList = homeScreenVM.getAllNotesfromHive(true);
+    responseList = homeScreenVM.getAllNotesfromHive();
     homeScreenVM.navigationStream.stream.listen((event) {
       if(event is NavigatorPush){
         context.push(pageConfig: event.pageConfig,data: event.data);

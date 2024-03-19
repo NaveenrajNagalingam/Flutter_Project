@@ -32,7 +32,7 @@ class HomeScreenVM extends HomeScreenModel{
     }
   }
 
-  Future<List<NotesBO>> getAllNotesfromHive(bool isNotes) async{
+  Future<List<NotesBO>> getAllNotesfromHive() async{
     List<NotesBO> myNotes = [];
     var response = await hiveDbService.getAllNotes();
     myNotes = response.content??[];
@@ -46,6 +46,62 @@ class HomeScreenVM extends HomeScreenModel{
     var response = await hiveDbService.deleteNotes(key: id);
     notes.removeWhere((note) => note.id == id);
     return response.content;
+  }
+
+  void function1(){
+
+  }
+
+  void function2(){
+    
+  }
+
+  void function3(){
+    
+  }
+
+  void function4(){
+    
+  }
+  void function5(){
+    
+  }
+  void function6(){
+    
+  }
+  void function7(){
+    
+  }
+  void function8(){
+    
+  }
+
+  void function9(){
+    
+  }
+
+  void function10(){
+    
+  }
+
+  void function11(){
+    
+  }
+
+  void function12(){
+    
+  }
+
+  void function13(){
+    
+  }
+
+  void function14(){
+    
+  }
+
+  void function15(){
+    
   }
 
 }
